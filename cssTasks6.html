@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* TASK 6 */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 16px;
+  margin: 5px 0;
+  display: inline-block;
+  border: 1px solid #afa9a9;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #2bffb1;
+  color: white;
+  padding: 12px 26px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 5px 12px;
+  background-color: #c0251a;
+}
+
+
+.imagecontainer {
+  text-align: center;
+  margin: 16px 2px 12px 2px;
+  position: relative;
+}
+
+.container1 {
+  padding: 16px;
+}
+
+
+    </style>
+</head>
+<body>
+    <!-- TASK 6 -->
+
+    <form action="">
+        <div class="imagecontainer">
+            <img src="Screenshot 2024-06-11 223041.png" alt="">
+        </div>
+        <div class="container">
+            <label for="uname" style="font-weight: bolder;">Username</label> <br>
+            <input type="text" name="uname" placeholder="Enter your name" id=""> <br>
+
+            <label for="pwd" style="font-weight: bolder;">Password</label> <br>
+            <input type="password" name="uname" placeholder="Enter your password" id=""> <br>
+
+            <button>Login</button> <br>
+
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+        </div>
+        <div class="container1" style="border: 2px solid black;;margin-top: 25px;">
+            <button type="button" class="cancelbtn" style="background-color: red;">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+    </form>
+
+    
+</body>
+</html>
