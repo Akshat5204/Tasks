@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="date()">show date</button>
+    <p>The Result is:<br>
+        <span id = "result2"></span>
+    </p>
+    <button onclick="time()">show time</button>
+    <p>The time is:<br>
+        <span id = "result1"></span>
+    </p>
+</body>
+
+<script>
+    function time(){
+        const time = new Date();
+        document.getElementById("result1").innerHTML = time.toString();
+    }
+    function date(){
+        let date = new Date().toLocaleDateString();
+        document.getElementById("result2").innerHTML = date.toString()
+    }
+</script>
+</html>
